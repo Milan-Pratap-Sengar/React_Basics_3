@@ -7,6 +7,7 @@ const App = () => {
   const[tours, setTours]=useState(data)
 
   function removeTourCard(id){
+        // filter() is used to return the specific values from the array
         const newTour=tours.filter(tour=>tour.id!==id)
         setTours(newTour);
   }
